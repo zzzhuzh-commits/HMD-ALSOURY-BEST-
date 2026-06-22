@@ -8,8 +8,11 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-from plugins.start import register
-register(app)
+from plugins.start import register as start_register
+start_register(app)
+
+from plugins.force_sub import register as force_sub_register
+force_sub_register(app)
 
 print("HMD-ALSOURY-BEST Started")
 app.run()
