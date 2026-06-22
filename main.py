@@ -8,7 +8,7 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-# أوامر البداية
+# البداية
 from plugins.start import register as start_register
 start_register(app)
 
@@ -20,5 +20,10 @@ force_sub_register(app)
 from plugins.broadcast import register as broadcast_register
 broadcast_register(app)
 
+# قوائم التشغيل
+from plugins.playlist import register as playlist_register
+playlist_register(app)
+
 print("HMD-ALSOURY-BEST Started")
+
 app.run()
