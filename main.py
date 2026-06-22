@@ -8,11 +8,8 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-@app.on_message()
-async def start_handler(client, message):
-    if message.text == "/start":
-        await message.reply_text(
-            "🎵 أهلاً بك في بوت الموسيقى العربي"
-        )
+from plugins.start import register
+register(app)
 
+print("HMD-ALSOURY-BEST Started")
 app.run()
