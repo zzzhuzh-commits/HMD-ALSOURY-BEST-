@@ -13,3 +13,8 @@ LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", 0))
 MUST_JOIN_CHANNEL = os.getenv("MUST_JOIN_CHANNEL")
 
 WEB_URL = os.getenv("WEB_URL")
+
+BOT_NAME = os.getenv("BOT_NAME", "HMD-ALSOURY-BEST")
+
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "")
+UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL", "")
