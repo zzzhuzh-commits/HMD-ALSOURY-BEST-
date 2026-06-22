@@ -1,0 +1,15 @@
+pyrogram
+tgcrypto
+pytgcalls
+motor
+dnspython
+python-dotenv
+aiohttp
+requests
+yt-dlp
+ffmpeg-python
+fastapi
+uvicorn
+jinja2
+python-multipart
+apscheduler
